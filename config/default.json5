@@ -1,0 +1,11 @@
+{
+  port: 8800,
+  host: '127.0.0.1',
+  mongo: {
+    url: 'mongodb://127.0.0.1:27017/ozland'
+  },
+  website: {
+    name: 'ozland',
+    owner: 'liusancuo'
+  }
+}

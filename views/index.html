@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO reservation</title>
+  </head>
+
+  <body>
+    
+  </body>
+  
+</html>
+
+<script src="http://test.czbapp.com:8507/socket.io/socket.io.js"></script>
+<script>
+  let socket;
+
+  socket = io(`http://127.0.0.1:3000?`, {transports: ['websocket'], reconnection: true, reconnectionDelay: 1000});
+
+  socket.on('connect', (data) => {
+    console.log('connect', data)
+  });
+  socket.on('error', function(data){
+    console.log('error', data);
+  });
+
+  socket.on('connect_error', function(data){
+    console.log('connect_error', data);
+  });
+
+  socket.on('event', function(data){
+    console.log('Eerror', data);
+  });
+
+  socket.on('disconnect', function(data){
+    console.log('disconnect', data);
+  });
+
+  socket.on('joinRoom', (data) => {
+    console.log('joinRoom', data)
+  })
+
+  function test() {
+    socket.emit('123123', {roomId: '123456'}, (data) => {
+      console.log('123123', data)
+    })
+  }
+</script>
