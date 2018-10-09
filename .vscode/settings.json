@@ -1,0 +1,9 @@
+{
+  "sync-rsync.remote": "liusancuo@132.232.56.62:~/workspace",
+  "sync-rsync.local": "/mnt/e/workspace/private/ozland",
+  "sync-rsync.delete": false,
+  "sync-rsync.exclude": [".git", ".vscode"],
+  "sync-rsync.executableShell": "c:/Windows/System32/bash.exe",
+  "sync-rsync.onSave": false,
+  "sync-rsync.chmod": "744"
+}
