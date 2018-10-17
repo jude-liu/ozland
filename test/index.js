@@ -2,8 +2,8 @@
 
 const config = require('config');
 const thrift = require('thrift');
-const IndexService = require('../lib/gen-nodejs/IndexService');
-const OwnerService = require('../lib/gen-nodejs/OwnerService');
+const IndexService = require('../thrift/gen-nodejs/IndexService');
+const OwnerService = require('../thrift/gen-nodejs/OwnerService');
 
 // 多服务方法调用
 let multi = new thrift.Multiplexer();

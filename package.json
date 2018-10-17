@@ -9,7 +9,7 @@
     "powershell_debug": "@powershell -Command $env:DEBUG='server:*';$env:NODE_ENV='test';node app.js",
     "powershell_dev": "@powershell -Command $env:DEBUG='disable';$env:NODE_ENV='dev';npm run gen;node app.js",
     "powershell_test": "@powershell -Command $env:NODE_ENV='test';node ./test/index.js",
-    "gen": "thrift --gen js:node -o ./lib ./thrift/main.thrift",
+    "gen": "thrift --gen js:node -o ./thrift ./thrift/main.thrift",
     "eslint": "./node_modules/.bin/eslint ./"
   },
   "author": "",
